@@ -1,0 +1,26 @@
+{
+  "name": "desktop-nyan-catto",
+  "version": "1.0.0",
+  "description": "A floating Nyan Catto desktop companion",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/launch.cjs .",
+    "test": "node --test",
+    "test:smoke": "node scripts/launch.cjs scripts/smoke.cjs",
+    "build": "electron-builder --win nsis portable",
+    "build:dir": "electron-builder --win --dir"
+  },
+  "devDependencies": {
+    "electron": "^42.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.desktopnyancatto.pet",
+    "productName": "Desktop Nyan Catto",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "src/**/*", "assets/**/*", "third-party/**/*", "README.md"],
+    "win": { "target": ["nsis", "portable"], "signAndEditExecutable": false },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true }
+  }
+}
