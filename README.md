@@ -30,7 +30,7 @@ Drag the visible pixels to move the pet. Movement stops during dragging and resu
 
 The tray's **Trail Color** menu contains **Classic Colors** and **Pride Collection**. Choose any preset to apply it immediately; only that preset is checked across both categories. Existing classic selections still restore, and Neon Green remains the first-time default.
 
-###Color 
+### Color 
 - Neon Green (default) - Pink - Blue - Purple - Orange - Yellow - Rainbow
 
 ### Pride Collection
